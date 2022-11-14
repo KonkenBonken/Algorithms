@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author KonkenBonken
+ *
+ */
+module PrimeNumbers {
+}
