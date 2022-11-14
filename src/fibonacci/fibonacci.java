@@ -4,21 +4,21 @@ import java.util.HashMap;
 
 public class Fibonacci {
 
-  static HashMap<Integer, Integer> memoization = new HashMap<Integer, Integer>();
+  static HashMap<Long, Long> memoization = new HashMap<Long, Long>();
 
   public static void main(String[] args) {
-    for (int i = 0; i < 47; i++)
+    for (int i = 0; i < 93; i++)
       System.out.println(fibonacci(i));
   }
 
-  private static int fibonacci(int n) {
+  private static long fibonacci(long n) {
     if (memoization.containsKey(n))
       return memoization.get(n);
 
     if (n <= 1)
       return n;
 
-    int value = fibonacci(n - 2) + fibonacci(n - 1);
+    long value = fibonacci(n - 2) + fibonacci(n - 1);
     memoization.put(n, value);
 
     return value;
