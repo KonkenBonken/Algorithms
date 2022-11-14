@@ -1,8 +1,8 @@
-package primeNumbers;
+package PrimeNumbers;
 
 import java.lang.Math;
 
-public class primeNumbers {
+public class PrimeNumbers {
 
 	public static void main(String[] args) {
 		int i = 1;
